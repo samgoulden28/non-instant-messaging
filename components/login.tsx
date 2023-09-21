@@ -21,11 +21,11 @@ export default function Login() {
     const user = localStorage.getItem("user");
     const token = JSON.parse(user || "{}")?.token;
     if (token) {
-      const decoded = jwt.verify(token, "your-secret-key"); // Use the same secret as in the backend
-      if (!decoded) {
-        // kick them off
-        removeItemFromLocalStorage("user");
-      }
+      // const decoded = jwt.verify(token, "your-secret-key"); // Use the same secret as in the backend
+      // if (!decoded) {
+      //   // kick them off
+      //   removeItemFromLocalStorage("user");
+      // }
     }
   }, [setUser]);
 

@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-red-100`}>
+      <body className={`${inter.className} bg-red-100 overflow-y-hidden`}>
         <nav className={"relative z-10 w-full box-border py-6 bg-red-200"}>
           <div className="flex justify-between items-center w-full relative">
             <div className="flex items-center z-10">
